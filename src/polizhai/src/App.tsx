@@ -1,7 +1,7 @@
 import React from 'react';
 import { WelcomePage } from "./pages/welcome/WelcomePage";
 
-import './app.css'
+import './styles/app.css'
 
 function App() {
   return (
