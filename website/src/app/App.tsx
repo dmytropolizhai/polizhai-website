@@ -1,5 +1,5 @@
 import React from 'react';
-import { WelcomePage } from "./pages/welcome/WelcomePage";
+import { WelcomePage } from "../pages/welcome/ui/WelcomePage";
 
 import './styles/app.css'
 
