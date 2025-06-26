@@ -16,18 +16,21 @@
 }
 
 .welcome-page-header {
+    flex-direction: column;
     position: relative;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     text-align: center;
+    height: 100%;
     padding: 1rem;
+
+    font-family: Poppins, serif;
+
 }
 
 .welcome-page-header__title {
-    font-family: Poppins, serif;
     font-size: 3vw;
     font-style: normal;
     font-weight: 500;
