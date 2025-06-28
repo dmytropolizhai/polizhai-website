@@ -1,7 +1,7 @@
 import '../styles/welcome-page.css'
 import backgroundElements from '../background-elements.png'
 
-import { NavigationBar } from "../../../widgets/navigation-bar/ui/NavigationBar.tsx";
+import { NavigationBar } from "@widgets/nav-bar/ui/NavigationBar.tsx";
 
 export const WelcomePage = () => {
     return (
