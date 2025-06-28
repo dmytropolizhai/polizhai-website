@@ -4,7 +4,9 @@
     "paths": {
       "@pages/*": ["./pages/*"],
       "@widgets/*": ["./widgets/*"],
-      "@app/*": ["./app/*"]
+      "@app/*": ["./app/*"],
+      "@public/*": ["../public/*"],
+      "@fonts/*": ["../public/fonts/*"]
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2022",

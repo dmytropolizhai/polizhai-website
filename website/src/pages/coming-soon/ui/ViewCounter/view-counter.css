@@ -1,0 +1,21 @@
+.view-counter__container {
+    position: fixed;
+    align-content: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+}
+
+.view-counter__title {
+    opacity: 0.25;
+    color: #FFF;
+
+    font-family: 'Poppins Regular', monospace;
+    font-weight: 500;
+
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.05rem;
+}

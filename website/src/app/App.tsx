@@ -1,6 +1,6 @@
-import { WelcomePage } from "../pages/welcome/ui/WelcomePage";
-
 import './styles/app.css'
+import ComingSoon from "@pages/coming-soon";
+
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
             <header className="App-header" >
             </header>
             <main className="App-main">
-                <WelcomePage />
+                <ComingSoon />
             </main>
         </div>
       </>
