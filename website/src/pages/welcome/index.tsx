@@ -9,9 +9,9 @@ import Layout from "@ui/Layout/Layout.tsx";
 
 export const WelcomePage = () => {
     return (
-        <Layout styles="welcome-page">
+        <Layout className="welcome-page">
             <BackgroundImage source={backgroundElements} />
-            <Layout styles="welcome-page-header">
+            <Layout className="welcome-page-header">
                 <p className="welcome-page-header__title">
                     “Make it <FontChangingText text="run" />, make it <FontChangingText text="text" />”
                 </p>
