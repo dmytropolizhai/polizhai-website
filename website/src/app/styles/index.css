@@ -1,6 +1,11 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    font-family: sans-serif;
+    background: radial-gradient(61.89% 61.89% at 50% 107.39%, #1A1A1A 0%, #202020 100%);
+    min-height: 100vh;
+}
+
+body {
+    overflow: hidden;
 }
