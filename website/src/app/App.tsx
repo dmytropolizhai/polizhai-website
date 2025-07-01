@@ -1,18 +1,16 @@
-import './styles/app.css'
-import ComingSoon from "@pages/coming-soon";
+
+import { ComingSoonPage } from "@pages/soon/soon.tsx";
 
 
 function App() {
   return (
-      <>
-        <div className="App">
-            <header className="App-header" >
-            </header>
-            <main className="App-main">
-                <ComingSoon />
-            </main>
-        </div>
-      </>
+    <div className="App">
+        <header className="App-header" >
+        </header>
+        <main className="App-main">
+            <ComingSoonPage />
+        </main>
+    </div>
   );
 }
 

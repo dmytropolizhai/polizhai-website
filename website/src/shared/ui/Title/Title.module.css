@@ -1,0 +1,17 @@
+.title {
+    background: linear-gradient(180deg, #FFF 0%, #333 206.94%);
+
+    text-align: center;
+
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 3ch;
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.5rem;
+    line-height: normal;
+    text-transform: uppercase;
+    user-select: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

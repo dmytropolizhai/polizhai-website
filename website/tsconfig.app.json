@@ -6,7 +6,10 @@
       "@widgets/*": ["./widgets/*"],
       "@app/*": ["./app/*"],
       "@public/*": ["../public/*"],
-      "@fonts/*": ["../public/fonts/*"]
+      "@fonts/*": ["../public/fonts/*"],
+      "@shared/*": ["./shared/*"],
+      "@ui/*": ["./shared/ui/*"],
+      "@assets/*": ["./shared/assets/*"]
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2022",
