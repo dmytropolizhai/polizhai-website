@@ -17,7 +17,7 @@ export const ComingSoonPage = () => {
         <Layout className={styles.soonPage}>
             <Layout className={styles.container}>
                 <LoadingIndicator />
-                <DateCountdown targetDate={deployDate} type="days" targetComponent={Title}/>
+                <DateCountdown targetDate={deployDate} type="minutes" targetComponent={Title}/>
             </Layout>
             <Layout className={styles.linksContainer}>
                 <IconButton icon={GithubIcon} onClick={() => {
