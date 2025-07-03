@@ -1,13 +1,14 @@
+import styles from './BackgroundImage.module.css'
 
-type Props = {
+export type BackgroundImageProps = {
     source: string,
     alt?: string,
 }
 
-export const BackgroundImage = ({ source, alt }: Props) => {
+export const BackgroundImage = ({ source, alt }: BackgroundImageProps) => {
     return (
         <img
-            className="background-image"
+            className={styles.backgroundImage}
             src={source}
             alt={alt}
         />

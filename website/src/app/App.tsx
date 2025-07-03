@@ -1,5 +1,4 @@
-
-import { ComingSoonPage } from "@pages/soon/soon.tsx";
+import WelcomePage from "@pages/welcome";
 
 
 function App() {
@@ -8,7 +7,7 @@ function App() {
         <header className="App-header" >
         </header>
         <main className="App-main">
-            <ComingSoonPage />
+            <WelcomePage />
         </main>
     </div>
   );

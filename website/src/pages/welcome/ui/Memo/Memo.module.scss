@@ -1,0 +1,15 @@
+h1 {
+  font-weight: normal;
+}
+h1, span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5vw;
+
+  background: linear-gradient(180deg, #FFF 0%, #333 206.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+span {
+  height: 3.125vw;
+}

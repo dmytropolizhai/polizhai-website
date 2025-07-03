@@ -9,3 +9,4 @@ export type Date = {
 };
 
 export type DateDifference = "years" | "months" | "days" | "hours" | "minutes" | "seconds";
+export type FontFamily = "Poppins" | "Georgia" | "JetBrains Mono"

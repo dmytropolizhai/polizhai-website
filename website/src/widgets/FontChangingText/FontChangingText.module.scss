@@ -1,0 +1,13 @@
+.fastChangingTextWrapper {
+    width: 7vw;
+
+    span {
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        width: 100%;
+        line-height: 1;
+
+        vertical-align: baseline;
+    }
+}
