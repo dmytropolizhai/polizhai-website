@@ -1,14 +1,22 @@
-import styles from './Title.module.css'
-import type { ReactNode } from "react";
+import './title.scss'
+import type { CSSProperties, ReactNode } from "react";
 
 type Props = {
+    isUpperCase?: boolean,
     children: ReactNode,
 };
 
-const Title = ({ children }: Props) => {
+const Title = ({ children, isUpperCase }: Props) => {
+    const innerStyle: CSSProperties = {
+        textTransform: isUpperCase ? 'uppercase' : 'none',
+    };
+
     return (
-        <h1 className={styles.title}>{children}</h1>
-    )
-}
+        <h1 style={innerStyle} className="title">
+            {children}
+        </h1>
+    );
+};
+
 
 export default Title;

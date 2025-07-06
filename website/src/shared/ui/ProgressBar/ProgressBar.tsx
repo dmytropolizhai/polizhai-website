@@ -1,9 +1,9 @@
-import styles from './ProgressBar.module.css'
+import './progress-bar.scss'
 
-const LoadIndicator = () => {
+const ProgressBar = () => {
     return (
-        <div className={styles.loader}></div>
+        <div className="loader"></div>
     )
 }
 
-export default LoadIndicator;
+export default ProgressBar;

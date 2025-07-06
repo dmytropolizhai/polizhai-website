@@ -1,7 +1,9 @@
-import styles from './IconButton.module.css'
+import './icon-button.scss'
+
 
 import { Icon, type IconProps } from "@ui/Icon/Icon.tsx";
 import { Button } from "@ui/Button/Button.tsx";
+
 
 type Props = {
     icon: IconProps,
@@ -10,7 +12,7 @@ type Props = {
 
 export const IconButton = (props: Props) => {
     return (
-        <Button onClick={props.onClick} className={styles.iconButton}>
+        <Button onClick={props.onClick} className='icon-button'>
             <Icon {...props.icon} />
         </Button>
     )

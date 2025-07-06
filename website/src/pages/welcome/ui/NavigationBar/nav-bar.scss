@@ -1,0 +1,58 @@
+@import "../../../../app/styles/mixins";
+
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  gap: 1rem;
+
+  .header {
+    text-decoration: none;
+    display: flex;
+    width: 10rem;
+    height: 100%;
+
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 3rem;
+    border: 0.563px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0.5px 0 0 rgba(255, 255, 255, 0.08) inset;
+    backdrop-filter: blur(18px);
+
+    animation: background 5s ease;
+  }
+
+  .header:hover,
+  header:focus {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .header span {
+    @include stylizedText(700);
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #navBar {
+
+    .header {
+      width: 7rem;
+    }
+
+    .header span {
+      font-size: 12px;
+    }
+  }
+
+}

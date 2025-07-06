@@ -1,21 +1,38 @@
-import styles from "./index.module.scss"
+import './index.scss'
+
+import { lazy, Suspense } from "react";
+
+import ProgressBar from "@ui/ProgressBar/ProgressBar.tsx";
 import Layout from "@ui/Layout/Layout.tsx";
-import Memo from './ui/Memo/Memo.tsx'
+import { FloatingImage } from "@widgets/FloatingImage/FloatingImage.tsx";
+import { Image } from "@ui/Image/Image.tsx";
 
 import flatCylinder from './images/flat-cylinder.png'
 import cube from './images/cube.png'
 import bigPyramid from './images/big-pyramid.png'
-import { FloatingImage } from "@widgets/FloatingImage/FloatingImage.tsx";
+
+const NavigationBar = lazy(() => import('./ui/NavigationBar/NavigationBar'));
+const Memo = lazy(() => import('./ui/Memo/Memo.tsx'))
 
 const WelcomePage = () => {
+    const isMobile: boolean = false;
+
     return (
-        <Layout className={styles.welcomePage}>
-            <Layout className={styles.objects}>
-                <FloatingImage id={styles.flatCylinder} src={flatCylinder} alt="flat-cylinder" />
-                <FloatingImage id={styles.cube} src={cube} alt="cube" />
-                <FloatingImage id={styles.bigPyramid} src={bigPyramid} alt="big-pyramid" />
+        <Layout className="welcome-page">
+            <Layout className="objects">
+                <FloatingImage id="flat-cylinder" src={flatCylinder} alt="flat-cylinder" />
+                <FloatingImage id="cube" src={cube} alt="cube" />
+                <FloatingImage id="big-pyramid" src={bigPyramid} alt="big-pyramid" />
+                {isMobile && (
+                    <Image id="m-background-cube" src={cube} alt="cube"/>
+                )}
             </Layout>
-            <Memo />
+            <Layout className="container">
+                <Suspense fallback={<ProgressBar />}>
+                    <Memo />
+                    <NavigationBar />
+                </Suspense>
+            </Layout>
         </Layout>
     )
 }
