@@ -1,4 +1,4 @@
-import styles from './Icon.module.css'
+import './icon.scss'
 
 export type IconProps = {
     alt: string;
@@ -7,6 +7,6 @@ export type IconProps = {
 
 export const Icon = ({ src, alt }: IconProps) => {
     return (
-        <img id={styles.icon} src={src} alt={alt}/>
+        <img className="icon" src={src} alt={alt}/>
     );
 }

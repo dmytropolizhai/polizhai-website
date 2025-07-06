@@ -1,11 +1,10 @@
-import { useState } from "react";
+import "./font-changing-text.scss";
 
-import Layout from "@ui/Layout/Layout.tsx";
+import { useState } from "react";
 import { useRepeater } from "@shared/lib/hooks/useRepeater.ts";
 
 import type { FontFamily } from "@shared/types";
 
-import styles from "./FontChangingText.module.scss";
 
 
 
@@ -25,11 +24,9 @@ const FontChangingText = ({ text, fonts = ["Poppins", "Georgia"] }: FontChanging
     }, 1000);
 
     return (
-        <Layout className={styles.fastChangingTextWrapper}>
-            <span style={style}>
-                {text}
-            </span>
-        </Layout>
+        <span className="fast-changing-text__inner" style={style}>
+            {text}
+        </span>
     )
 }
 

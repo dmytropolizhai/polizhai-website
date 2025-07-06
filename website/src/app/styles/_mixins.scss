@@ -1,0 +1,47 @@
+@mixin slide-in-from-left($distance: -100%, $duration: 0.5s) {
+  animation: slideInFromLeft $duration ease forwards;
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX($distance);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slide-in-from-top($distance: -100%, $duration: 0.5s) {
+  animation: slideInFromTop $duration ease forwards;
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY($distance);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin dissolve($duration: 0.5s) {
+  animation: dissolve $duration ease-in forwards;
+  @keyframes dissolve {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin stylizedText($weight: 500) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $weight;
+  background: linear-gradient(180deg, #FFF 0%, #333 206.94%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

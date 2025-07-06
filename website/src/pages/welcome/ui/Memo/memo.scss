@@ -1,0 +1,39 @@
+@import "../../../../app/styles/mixins";
+#memo {
+  display: flex;
+
+  .title {
+    @include stylizedText();
+    font-size: 3.3vw;
+
+    text-align: center;
+
+    .title-line {
+      @include stylizedText();
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .highlighted {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #memo {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+
+    .title {
+      font-size: 7vw;
+      text-align: left;
+
+      .line {
+        display: block;
+        white-space: normal;
+      }
+    }
+  }
+}
