@@ -44,6 +44,39 @@
       flex-shrink: 0;
     }
 
+    .blur {
+      filter: blur(0.5rem);
+
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      left: 0;
+
+      #helix {
+        position: absolute;
+        width: 18vw;
+
+        top: -5vh;
+        left: 85vw;
+      }
+
+      #icosahedron {
+        position: absolute;
+        width: 32rem;
+
+        top: 60rem;
+        left: 20rem;
+
+      }
+
+      #pyramid {
+        position: absolute;
+
+        width: 16vw;
+      }
+
+    }
+
   }
   .container {
     display: flex;
@@ -51,7 +84,6 @@
     align-items: center;
     flex-direction: column;
   }
-
 }
 
 

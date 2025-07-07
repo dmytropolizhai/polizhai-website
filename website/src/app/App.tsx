@@ -1,7 +1,5 @@
-import { lazy, Suspense } from "react";
-import ProgressBar from "@ui/ProgressBar/ProgressBar.tsx";
 
-const WelcomePage = lazy(() => import('@pages/welcome/'))
+import WelcomePage from "@pages/welcome";
 
 function App() {
   return (
@@ -9,9 +7,7 @@ function App() {
             <header className="App-header" >
             </header>
             <main className="App-main">
-                <Suspense fallback={<ProgressBar />}>
-                    <WelcomePage />
-                </Suspense>
+                <WelcomePage />
             </main>
         </div>
   );
