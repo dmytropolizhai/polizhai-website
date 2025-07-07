@@ -2,6 +2,8 @@
 
 
 #nav-bar {
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -13,8 +15,8 @@
 
   .header {
     text-decoration: none;
-    display: flex;
-    width: 10rem;
+    display: inline-flex;
+    width: 7rem;
     height: 100%;
 
     padding: 1rem;
@@ -37,22 +39,28 @@
     background: rgba(255, 255, 255, 0.1);
   }
 
-  .header span {
+  .header a {
     @include stylizedText(700);
     font-size: 1rem;
   }
 }
 
-@media (max-width: 1000px) {
-  #navBar {
-
+@media screen and (max-width: 1024px) {
+  #nav-bar {
     .header {
-      width: 7rem;
+      width: fit-content;
     }
-
-    .header span {
-      font-size: 12px;
+    .header a {
+      font-size: 1rem;
     }
   }
+}
 
+@media screen and (max-width: 425px) {
+  #nav-bar {
+    display: flex;
+    .header {
+      display: none;
+    }
+  }
 }

@@ -9,3 +9,5 @@ export const FloatingImage = (props: FloatingImageProps) => {
         <Image className="floating-image" {...props} />
     )
 }
+
+export default FloatingImage;
