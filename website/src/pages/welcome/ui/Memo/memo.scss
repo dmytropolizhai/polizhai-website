@@ -20,17 +20,18 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   #memo {
     flex-direction: column;
     height: fit-content;
-    width: fit-content;
+    width: 100%;
+    align-items: center;
 
     .title {
       font-size: 7vw;
       text-align: left;
 
-      .line {
+      .title-line {
         display: block;
         white-space: normal;
       }

@@ -10,9 +10,11 @@ type HeaderProps = {
 
 const Header = (props: HeaderProps) => {
     return (
-        <a href={props.href} className="header">
-            <span>{props.children}</span>
-        </a>
+        <li className="header">
+            <a href={props.href}>
+                {props.children}
+            </a>
+        </li>
     )
 }
 
@@ -20,7 +22,7 @@ const Header = (props: HeaderProps) => {
 export const NavigationBar = () => {
     return (
         <Suspense fallback={<ProgressBar />}>
-            <div id="nav-bar">
+            <ul id="nav-bar">
                 <Header href="#memo">Memo</Header>
                 <Header href="#approach">My approach</Header>
                 <Header href="#projects">Projects</Header>
@@ -28,7 +30,7 @@ export const NavigationBar = () => {
                 <Header href="#story">My story</Header>
                 <Header href="#contacts">Contacts</Header>
                 <Header href="#support">Support</Header>
-            </div>
+            </ul>
         </Suspense>
     )
 }
