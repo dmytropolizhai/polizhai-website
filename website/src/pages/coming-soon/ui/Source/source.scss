@@ -1,0 +1,35 @@
+li::marker {
+  content: ""
+}
+
+.source-container {
+  &:hover {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 4px 0 #2E3232;
+  }
+  border-radius: 1rem;
+
+  display: flex;
+  padding: clamp(1rem, 1.5rem, 2rem);
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  place-content: center;
+
+
+  width: clamp(6rem, 12rem, 13rem);
+  height: clamp(1rem, 2rem, 3rem);
+
+  text-decoration: none;
+
+  p {
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: clamp(0.5rem, 1rem, 2rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+  }
+}
