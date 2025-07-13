@@ -1,5 +1,5 @@
 import './source.scss'
-import { Colors } from "@shared/consts/Colors.ts";
+import { useTheme } from "@mui/material";
 
 export type SourceProps = {
     id: number,
@@ -9,11 +9,17 @@ export type SourceProps = {
 }
 
 export const Source = (props: SourceProps) => {
-  return (
+    const theme = useTheme();
+
+    return (
       <li>
-          <a href={props.href} className="source-container" style={{ background: Colors.dark.surface }}>
+          <a className="source-container border-hover" style={{
+              background: theme.palette.background.paper,
+          }}
+             href={props.href} target="_blank" rel="noopener noreferrer" >
+              {/* Make icon change color on theme switch */}
               <img className="icon" src={props.iconSrc} alt={`icon for ${props.title}`} />
-              <p style={{ color: Colors.dark.primary }}>{props.title}</p>
+              <p style={{ color: theme.palette.primary.main }}>{props.title}</p>
           </a>
       </li>
   )
