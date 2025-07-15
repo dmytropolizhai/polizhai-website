@@ -10,12 +10,13 @@ export type SourceProps = {
 
 export const Source = (props: SourceProps) => {
     const theme = useTheme();
+    const styles = {
+        background: theme.palette.background.paper,
+    }
 
     return (
       <li>
-          <a className="source-container border-hover" style={{
-              background: theme.palette.background.paper,
-          }}
+          <a className="source-container border-hover" style={styles}
              href={props.href} target="_blank" rel="noopener noreferrer" >
               {/* Make icon change color on theme switch */}
               <img className="icon" src={props.iconSrc} alt={`icon for ${props.title}`} />
