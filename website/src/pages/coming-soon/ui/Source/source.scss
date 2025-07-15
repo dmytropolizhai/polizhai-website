@@ -3,10 +3,6 @@ li::marker {
 }
 
 .source-container {
-  &:hover {
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 4px 0 #2E3232;
-  }
   border-radius: 1rem;
 
   display: flex;

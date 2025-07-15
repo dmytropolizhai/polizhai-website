@@ -1,0 +1,8 @@
+.border-hover {
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 #2E3232;
+  }
+  border-radius: 0.5rem;
+  transition: box-shadow  0.2s ease-in-out;
+}

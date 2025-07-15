@@ -1,6 +1,7 @@
 import './index.scss'
 
 import { DateToDeploy, SourceList,
+    ThemeButton,
     type SourceProps } from './ui/'
 import { Source } from "./ui/Source/Source.tsx";
 
@@ -20,6 +21,7 @@ export const ComingSoon = () => {
                 ))}
             </SourceList>
 
+            <ThemeButton darkIcon='assets/moon.svg' lightIcon='assets/sun.svg' />
         </section>
     );
 }
