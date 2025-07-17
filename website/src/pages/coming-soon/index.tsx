@@ -1,12 +1,12 @@
 import './index.scss'
 
-import { Title, LinkList,
-    ThemeButton,
-    type LinkProps } from './ui/'
-import { Link } from "@ui/Link/Link.tsx";
+import {Links} from "@ui/Links/Links.tsx";
+import {Title} from "@ui/Title.tsx"
+import {ThemeButton} from "@ui/ThemeButton/ThemeButton.tsx";
+import type {Link} from "@shared/type/link.ts";
 
 export const ComingSoon = () => {
-    const sources: LinkProps[] = [
+    const sources: Link[] = [
         { id: 0, title: "Telegram", iconSrc: "/assets/telegram.svg", href: "https://t.me/dmytro_polizhai_channel" },
         { id: 1, title: "Github", iconSrc: "/assets/github.svg", href: "https://github.com/DmytroPolizhai/polizhai-website" },
         { id: 2, title: "Figma", iconSrc: "/assets/figma.svg", href: "https://www.figma.com/design/bfokLBp3dx80zyfwxk5RKH/Website"},
@@ -15,13 +15,8 @@ export const ComingSoon = () => {
     return (
         <section id="coming-soon">
             <Title content="01 AUGUST"></Title>
-            <LinkList>
-                {sources.map((source: LinkProps) => (
-                    <Link key={source.id} {...source}/>
-                ))}
-            </LinkList>
-
-            <ThemeButton darkIcon='assets/moon.svg' lightIcon='assets/sun.svg' />
+            <Links data={sources} />
+            <ThemeButton />
         </section>
     );
 }

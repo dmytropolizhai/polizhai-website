@@ -4,17 +4,18 @@ import { useState } from "react";
 
 type ThemeButtonProps = {
     title?: string;
-    lightIcon: string;
-    darkIcon: string;
 };
 
-export const ThemeButton = ({ title, lightIcon, darkIcon }: ThemeButtonProps) => {
+const MOON = 'assets/moon.svg';
+const SUN = 'assets/sun.svg';
+
+export const ThemeButton = ({ title }: ThemeButtonProps) => {
     const { toggleTheme, mode } = useThemeMode(); // Assume this gives "light" | "dark"
-    const [icon, setIcon] = useState<string>(mode === "dark" ? darkIcon : lightIcon);
+    const [icon, setIcon] = useState<string>(mode === "dark" ? SUN : MOON);
 
     const handleClick = () => {
         toggleTheme();
-        setIcon(prev => (prev === lightIcon ? darkIcon : lightIcon));
+    setIcon(prev => (prev === SUN ? MOON : SUN));
     };
 
     return (

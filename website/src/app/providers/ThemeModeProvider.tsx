@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import type { ThemeMode } from "@shared/type/ThemeMode.ts";
+import type { ThemeMode } from "@shared/type/themeMode.ts";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import { ThemeContext } from "@app/contexts/ThemeContext.tsx";

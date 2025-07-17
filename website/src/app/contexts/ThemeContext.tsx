@@ -1,4 +1,4 @@
-import type { ThemeContextType } from "@shared/type/ThemeContextType.ts";
+import type { ThemeContextType } from "@shared/type/themeContextType.ts";
 import { createContext } from 'react';
 
 export const ThemeContext =

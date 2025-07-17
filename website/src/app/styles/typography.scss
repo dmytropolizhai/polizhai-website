@@ -19,3 +19,12 @@ h2 {
   font-weight: 700;
   line-height: normal;
 }
+
+a {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: clamp(0.5rem, 1.5rem, 3vw);
+}

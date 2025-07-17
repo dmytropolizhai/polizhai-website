@@ -1,4 +1,4 @@
-import './styles/app.scss'
+import './styles/global.scss'
 
 import { useTheme } from "@mui/material";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 // Pages
 import { Home } from '@pages/home';
 import { ComingSoon } from "@pages/coming-soon";
+import { NavBar } from "@app/NavBar.tsx";
 
 
 function App() {
@@ -13,16 +14,19 @@ function App() {
     const styles = { background: theme.palette.background.default }
 
     return (
-        <BrowserRouter>
-            <div className="App" style={styles}>
-                <main className="App-main">
-                    <Routes>
-                        <Route path="/" element={<Home />}/>
-                        <Route path="/pages/oming-soon" element={<ComingSoon/>}/>
-                    </Routes>
-                </main>
-            </div>
-        </BrowserRouter>
+        <>
+            <NavBar />
+            <BrowserRouter>
+                <div className="App" style={styles}>
+                    <main className="App-main">
+                        <Routes>
+                            <Route path="/" element={<Home />}/>
+                            <Route path="/pages/oming-soon" element={<ComingSoon/>}/>
+                        </Routes>
+                    </main>
+                </div>
+            </BrowserRouter>
+        </>
     );
 }
 
