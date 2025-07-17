@@ -1,9 +1,9 @@
-import './source-list.scss'
+import './link-list.scss'
 
 import type { PropsWithChildren } from "react";
 
 
-export const SourceList = ({ children }: Required<PropsWithChildren>) => {
+export const LinkList = ({ children }: Required<PropsWithChildren>) => {
     return (
         <ul className="source-list">
             {children}

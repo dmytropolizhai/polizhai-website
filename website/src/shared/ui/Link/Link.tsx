@@ -1,14 +1,14 @@
-import './source.scss'
+import './link.scss'
 import { useTheme } from "@mui/material";
 
-export type SourceProps = {
+export type LinkProps = {
     id: number,
     title: string,
     iconSrc: string,
     href?: string,
 }
 
-export const Source = (props: SourceProps) => {
+export const Link = (props: LinkProps) => {
     const theme = useTheme();
     const styles = {
         background: theme.palette.background.paper,
