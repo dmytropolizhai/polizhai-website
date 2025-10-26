@@ -1,8 +1,5 @@
-import './index.scss'
-
-import { DateToDeploy, SourceList,
-    ThemeButton,
-    type SourceProps } from './ui/'
+import './index.css'
+import { DateToDeploy, SourceList, type SourceProps } from './ui/'
 import { Source } from "./ui/Source/Source.tsx";
 
 export const ComingSoon = () => {
@@ -14,14 +11,12 @@ export const ComingSoon = () => {
 
     return (
         <section id="coming-soon">
-            <DateToDeploy>01 AUGUST</DateToDeploy>
+            <DateToDeploy>2026</DateToDeploy>
             <SourceList>
                 {sources.map((source: SourceProps) => (
                     <Source key={source.id} {...source}/>
                 ))}
             </SourceList>
-
-            <ThemeButton darkIcon='assets/moon.svg' lightIcon='assets/sun.svg' />
         </section>
     );
 }
